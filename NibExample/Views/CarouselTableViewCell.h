@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CarouselTableViewCell.h
 //  NibExample
 //
 //  Created by Nick Swift on 7/18/18.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CarouselTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *locationImageView;
 
 @end
-

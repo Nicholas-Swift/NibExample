@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="obo-Su-fug" customClass="InfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="obo-Su-fug" id="2sD-sh-wiN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t48-TF-L3N">
+                        <rect key="frame" x="24" y="19" width="327" height="29"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Hacker Way, menlo Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Li-91-Ntx">
+                        <rect key="frame" x="24" y="52" width="327" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpW-SK-Big">
+                        <rect key="frame" x="24" y="75" width="327" height="50.5"/>
+                        <string key="text">This is a description. This is a description. This is a description. This is a description. This is a description. This is a description.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="MpW-SK-Big" secondAttribute="trailing" constant="8" id="2qJ-9d-i5W"/>
+                    <constraint firstItem="t48-TF-L3N" firstAttribute="top" secondItem="2sD-sh-wiN" secondAttribute="topMargin" constant="8" id="Dcn-TL-OHL"/>
+                    <constraint firstItem="0Li-91-Ntx" firstAttribute="top" secondItem="t48-TF-L3N" secondAttribute="bottom" constant="4" id="Onv-w6-EIH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="t48-TF-L3N" secondAttribute="trailing" constant="8" id="U1s-m4-faW"/>
+                    <constraint firstItem="0Li-91-Ntx" firstAttribute="leading" secondItem="2sD-sh-wiN" secondAttribute="leadingMargin" constant="8" id="Umy-Zr-31P"/>
+                    <constraint firstAttribute="bottom" secondItem="MpW-SK-Big" secondAttribute="bottom" constant="24" id="VO3-lT-VXP"/>
+                    <constraint firstItem="MpW-SK-Big" firstAttribute="top" secondItem="0Li-91-Ntx" secondAttribute="bottom" constant="8" id="Wfa-45-EwT"/>
+                    <constraint firstItem="MpW-SK-Big" firstAttribute="leading" secondItem="2sD-sh-wiN" secondAttribute="leadingMargin" constant="8" id="Xcb-x2-M5G"/>
+                    <constraint firstItem="t48-TF-L3N" firstAttribute="leading" secondItem="2sD-sh-wiN" secondAttribute="leadingMargin" constant="8" id="fKe-V0-Xej"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0Li-91-Ntx" secondAttribute="trailing" constant="8" id="qUG-fF-LkP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="0Li-91-Ntx" id="Orr-ha-f0E"/>
+                <outlet property="locationDescriptionLabel" destination="MpW-SK-Big" id="hLv-aT-CIT"/>
+                <outlet property="locationTitle" destination="t48-TF-L3N" id="pn0-wR-XZJ"/>
+            </connections>
+            <point key="canvasLocation" x="17.5" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>
